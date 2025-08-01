@@ -1,0 +1,839 @@
+/*
+==============
+Template Name : JPhotography Minimal Photographey Portfolio HTML5 Template
+Author Name : Muse-Master (Dasagani Ramesh Goud)
+Version : 1.0
+==============
+CSS Styles Content Table
+1. Global Styles
+2. Nav Bar Styles
+3. Home Page Gallery
+4. About Me Page
+5. Contact Page
+6. Project Single
+7. Footer Global Styles
+*/
+
+/*===========
+Global Styles
+=============*/
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, a, .btn{
+    font-family: 'Playfair Display', serif;
+    color: #252525;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h4, h5, h6, p {
+    font-family: 'Raleway', sans-serif;
+    color: #696969;
+}
+
+p {
+    line-height: 1.7;
+}
+
+
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.h3, h3 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.btn-lg {
+    padding: 12px 68px;
+}
+.btn {
+    padding: 10px 40px;
+}
+
+.btn {
+    background-color: #252525;
+    border: 1px solid #252525;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border-color: #252525;
+    color: #252525;
+}
+
+.btn.btn-invert {
+    background-color: #fff;
+    border: 1px solid #252525;
+    color: #252525;
+    border-radius: 2px;
+
+}
+.btn.btn-invert:hover {
+    background-color: #252525;
+    border: 1px solid #252525;
+    color: #fff;
+}
+
+.mgR-20px {
+    margin-right: 20px;
+}
+
+
+/*=============================
+CSS Smooth Aiimation Transition
+=============================*/
+.item-inner,
+.controls button,
+.item-hover .hover-text,
+.item-hover, 
+.home-gallery .thumb-a,
+.hover-text h3,
+.swiper-button-prev, 
+.swiper-button-next,
+footer a{
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+
+/*============
+Nav Bar Styles
+==============*/
+
+.container-fluid .navbar {
+    padding: 30px 8%;
+}
+
+.navbar-brand {
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-brand:hover {
+    color: #252525;
+}
+
+.dropdown-menu > li > a {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #252525;
+}
+
+
+.navbar-light .navbar-nav > .active > a,
+.navbar-light .navbar-nav > .active > a:focus, 
+.navbar-light .navbar-nav > .active > a:hover {
+    color: #252525;
+    background-color: transparent;
+}
+
+.navbar-toggler > .i1{
+    top:9px;
+}
+
+.navbar-toggler > .i2{
+    top:17px;
+}
+
+.navbar-toggler > .i3{
+    top:25px;
+}
+
+.navbar-toggler.active > .i2{
+    opacity:0;
+}
+.navbar-toggler.active > .i1,
+.navbar-toggler.active > .i3{
+    top:17px;
+}
+
+.navbar-toggler.active > .i1{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+.navbar-toggler.active > .i3{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+.navbar-toggler {
+    position: relative;
+    width: 50px;
+    height: 40px;
+}
+.navbar-toggler > .icon-bar {
+    position: absolute;
+    width: 30px;
+    left: 10px;
+    margin: 0 !important;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    background-color: #888;
+    height: 3px;
+}
+
+
+/*Borders*/
+
+.borders div {
+    z-index: 9999;
+    pointer-events: none;
+    background-color: transparent;
+    border-color: #252525;
+    border-style: solid;
+    height: 90px;
+    position: fixed;
+    width: 90px;
+}
+
+.brTR {
+    border-width: 15px 15px 0 0;
+    right: 0;
+    top: 0;
+}
+
+.brTL {
+    border-width: 15px 0 0 15px;
+    top: 0;
+    left: 0;
+}
+
+.brBL {
+    border-width: 0 0 15px 15px;
+    bottom: 0;
+    left: 0;
+}
+
+.brBR {
+    border-width: 0 15px 15px 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/*=========
+Header Text
+===========*/
+
+#hero-text {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#hero-text h2 {
+    font-size: 32px;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+
+#hero-text h5 {
+    margin-top: 0;
+    letter-spacing: 6px;
+    color: #696969;
+}
+
+/*==========
+Home Gallery
+==========*/
+
+
+h4 {
+    color: grey;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#portfolio p {
+    color: grey;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+a {
+    color: #cd6839;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+}
+
+.single-content img {
+    width: 290px;
+    height: 100%;
+    margin: 10px;
+}
+
+.filters {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav li {
+    display: inline;
+    padding: 8px 18px;
+    font-size: 16px;
+    color: #636363;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+nav li:hover {
+    color: #a6a6a6;
+}
+
+nav li.active {
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+
+
+.item-inner {
+    background: #fff;
+    -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.item-hover {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 7;
+    opacity: 0;
+    visibility: hidden;
+    right: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.item-a.hovered .item-img {
+    bottom: 0px;
+}
+
+
+.hover-text h3{
+    margin: 0;
+    color: #fff;
+}
+
+.item-hover .hover-text {
+    padding: 14px 0 18px;
+    bottom: -16px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+
+.item-inner:hover {
+    border-radius: 6px;
+}
+
+.thumb-a:hover .item-hover{
+    opacity: 1;
+    visibility: visible;
+    border-radius: 4px;
+}
+.thumb-a:hover .item-hover .hover-text{
+    bottom: 0;
+
+}
+
+
+/*===========
+Home Page Gallery
+============*/
+
+/*Mix Controls*/
+.controls button {
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: #7C7C7C;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.controls button:hover, .controls button.mixitup-control-active {
+    border: 1px solid #656565;
+    border-radius: 25px;
+    color: #656565;
+}
+
+.controls {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.controls button:focus {
+    outline: none;
+}
+/*Mix Controls End*/
+
+.mix-container {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.home-gallery {
+    width: 100%;
+    max-width: 2000px;
+    display: inline-block;
+    padding: 0 7.5px;
+}
+
+.home-gallery .mix {
+    display: block;
+    padding: 7.5px;
+    width: 25%;
+    float: left;
+}
+
+.home-gallery .mix a:before {
+    bottom: 0px;
+pointer-events: none;
+right: 0px;
+box-shadow: inset 0px 0px 60px rgba(0,0,0,0.2), inset 0px 0px 60px rgba(0,0,0,0.2);
+position: absolute;
+transition: box-shadow 0.2s ease-in-out 0s;
+left: 0px;
+top: 0px;
+content: "";
+-webkit-transition: box-shadow 0.2s ease-in-out 0s;
+}
+
+.home-gallery .mix:hover a:before {
+box-shadow: inset 0px 0px 20px rgba(0,0,0,0.1), inset 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.home-gallery .thumb-a {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    max-height: 340px;
+}
+
+.home-gallery .item-img {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.home-gallery .item-img img {
+    max-width: 100%;
+}
+
+
+.section-title {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/*============
+About Me Page
+=============*/
+.my-name {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.about-me p {
+    line-height: 26px;
+}
+
+.progress-bars {
+    padding-top: 20px;
+}
+
+.p-bar {
+    border-bottom: 2px solid #252525;
+    padding-bottom: 10px;
+    padding-top: 24px;
+}
+
+.p-bar p {
+    display: inline;
+    font-size: 18px;
+    font-weight: 300;
+    color: #252525;
+
+}
+
+.p-bar .text-right {
+    float: right;
+}
+
+/*=============
+Contact Page
+=============*/
+.contact a, .form-control {
+    color: #696969;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact .form-control {
+    padding: 12px 18px;
+}
+
+.contact form .btn-lg {
+    float: right;
+}
+
+.contact-info {
+    margin-top: 100px;
+}
+.contact-info .card {
+    background-color: #F4F4F4;
+    border:none;
+    padding: 50px 10px;
+    text-align: center;
+}
+#map {
+    display: block;
+    width: 100%;
+    height: 384px;
+}
+
+.contact-info .card p {
+    margin-bottom: 0;
+}
+.contact-info .card .fas {
+    display: block;
+    font-size: 34px;
+    color: #252525;
+    padding-bottom: 16px;
+}
+
+.contact-info .card a, .contact-info .card p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+.contact-info .card a:hover {
+    text-decoration: underline;
+}
+
+/*===============
+Project Single
+===============*/
+.project-holder {
+    max-height: 740px;
+    overflow: hidden;
+}
+
+.project-details {
+    padding-top: 30px;
+}
+.project-details h2 {
+    margin-bottom: 16px;
+}
+
+.project-details p {
+    font-weight: 300;
+    text-align: justify;
+}
+.project-details .details-right {
+    padding-top: 36px;
+}
+
+.project-details ul {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.project-details ul li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.project-details ul > li:first-child {
+    width: 80px;
+}
+
+.project-details .devider {
+    padding-right: 12px;
+}
+
+.project-btns {
+    padding-top: 26px;
+}
+
+.project-btns .btn {
+    width: 160px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    background-image: none;
+    width: auto;
+    height: auto;
+    background-color: #252525;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 2px;
+}
+
+.project-holder .project-video {
+    width: 100%;
+    height: 624px;
+}
+
+/*===================
+Footer Global Styles
+=====================*/
+.footer-info {
+    padding: 120px 0;
+    text-align: center;
+    border-top: 1px solid #E3E3E3;
+    margin-top: 120px;
+}
+
+footer a {
+    font-size: 28px;
+    padding: 0 16px;
+}
+
+footer a, footer a:link {
+    text-decoration: none;
+    color: #777;
+}
+
+footer a:hover {
+    color: #202020;
+}
+
+
+
+/*========================================
+========================================
+======= Responsive Media Queries =======
+========================================
+========================================*/
+@media only screen and (max-width: 1500px) {
+    nav li {
+        padding: 8px 10px; 
+    }
+    .home-gallery .mix {
+        width: 33.333%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    nav li {
+        padding: 6px 8px; 
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    h1 {
+        font-size: 34px;
+    }
+    #hero-text h2 {
+        font-size: 28px;
+    }
+    #hero-text h5 {
+        letter-spacing: 3px;
+    }
+    .h3, h3 {
+        font-size: 18px;
+    }
+    .project-holder .project-video {
+        height: 523px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #hero-text h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    #hero-text h2 {
+        font-size: 20px;
+        padding-top: 2px;
+        padding-bottom: 6px;
+    }
+    .project-holder .project-video {
+        height: 388px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .home-gallery .mix {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .borders div {
+        display: none;
+    }
+    #hero-text {
+        padding-bottom: 80px;
+    }
+    .navbar-brand {
+        font-size: 28px;
+    }
+    .home-gallery .mix {
+        padding: 10px;
+    }
+    .item-hover .hover-text {
+        padding: 8px 0 12px;
+    }
+    #map {
+        margin-top: 40px;
+    }
+    .contact-info .card {
+        padding: 30px 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .project-holder .project-video {
+        height: 287px;
+    }
+    .footer-info {
+        padding: 80px 0;
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .navbar-brand {
+        font-size: 22px;
+    }
+    .home-gallery .mix {
+        width: 100%;
+    }
+    .home-gallery .thumb-a {
+        max-height: 240px;
+    }
+    .controls button {
+        padding: 4px 12px;
+    }
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .borders div {
+        height: 80px;
+        width: 80px;
+    }
+    .brTR {
+        border-width: 15px 15px 0 0;
+        right: 0;
+        top: 0;
+    }
+    .brTL {
+        border-width: 15px 0 0 15px;
+        top: 0;
+        left: 0;
+    }
+
+    .brBL {
+        border-width: 0 0 15px 15px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .brBR {
+        border-width: 0 15px 15px 0;
+        bottom: 0;
+        right: 0;
+    }
+    footer a {
+        font-size: 24px;
+        padding: 0 6px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+    #hero-text h5 {
+        letter-spacing: 0;
+    }
+    #hero-text {
+        padding-bottom: 60px;
+        padding-top: 80px;
+    }
+    .h2, h2 {
+        font-size: 22px;
+    }
+}

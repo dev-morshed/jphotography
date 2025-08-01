@@ -1,0 +1,98 @@
+/*===============
+Dark Theme Styles.
+=================*/
+body {
+    background-color: #101010;
+    color: #fff;
+}
+
+.container-fluid .navbar {
+    background-color: #0D0D0D !important;
+}
+
+h4, h5, h6, p, #hero-text h5 {
+    color: #f4f4f4;
+}
+
+.navbar .navbar-brand, 
+.navbar .navbar-brand:focus, 
+.navbar .navbar-brand:hover,
+h1, h2, h3, a, .btn, 
+.p-bar p,
+.dropdown-menu > li > a,
+.navbar-light .navbar-nav .nav-link, 
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav > .active > a,
+.navbar-light .navbar-nav > .active > a:focus, 
+.navbar-light .navbar-nav > .active > a:hover,
+.contact-info .card .fas {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    opacity: 0.75;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+    opacity: 1;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #fff;
+    opacity: 1;
+}
+
+nav li.active {
+    border: 1px solid #555555;
+}
+
+.controls button {
+    color: #C0C0C0;
+}
+
+.footer-info {
+    border-top: 1px solid #262626;
+}
+
+footer a:hover {
+    color: #dddddd;
+}
+
+.p-bar {
+    border-bottom: 2px solid #fff;
+}
+
+.form-control {
+    color: #fff;
+    background-color: #252525;
+    border: 1px solid #252525;
+}
+
+.form-control:focus, .form-control:hover, .form-control:active {
+    color: #fff;
+    background-color: #212121;
+    border-color: #80bdff;
+}
+
+.contact-info .card {
+    background-color: #212121;
+}
+
+.contact a, .form-control {
+    color: #f4f4f4;
+}
+
+.controls button:hover, .controls button.mixitup-control-active {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.contact a, .form-control {
+    font-weight: 400;
+}
+
+.form-control::placeholder {
+    color: #c9c9c9;
+}
